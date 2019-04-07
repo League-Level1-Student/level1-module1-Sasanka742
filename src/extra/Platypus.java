@@ -15,11 +15,5 @@ public class Platypus {
 }
 
 
-public class runner {
 	
-	public static void main(String[] args) {
-		 Platypus plat = new Platypus("Patty");
-		 plat.sayHi();
-	}
 	
-}
