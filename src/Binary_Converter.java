@@ -18,10 +18,7 @@ public class Binary_Converter implements ActionListener {
 	JButton button = new JButton("Convert");
 	
 	public Binary_Converter() {
-		
-	String answerInput = JOptionPane.showInputDialog("Insert Binary: ");
-		binary = answerInput;
-		answer.setText(answerInput);
+		answer.setText(answer.getText());
 		panel.add(label);
 		panel.add(answer);
 		frame.add(panel);
@@ -59,7 +56,7 @@ public class Binary_Converter implements ActionListener {
 		JButton buttonPressed = (JButton) arg0.getSource();
 		
 		if(arg0.getSource()==button){
-			label.setText(convert(binary));
+			label.setText(convert(answer.getText()));
 			
 		}
 	}
